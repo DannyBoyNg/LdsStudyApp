@@ -2,43 +2,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>LDS Study App</title>
+  <title>LDS Scholar</title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    @media only screen and (max-width: 800px) {
-      .content {
-        margin-top: 0 !important;
-      }
-    }
     p {
-      padding-left: 20px;
+      margin: 15px;
     }
   </style>
+  <script>
+    function CopyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(function () {}, function (err) {});
+    }
+  </script>
 </head>
 <body style="margin: 0;font-family: 'Segoe UI'">
-  <div style="height: 64px; background-color: lightblue;padding: 10px;">
+  <div style="height: 64px; background-color: lightblue;padding: 10px;min-width:400px">
     <img src="logo.png" style="height: 60px;float: left;">
-    <div style="font-size: 18px; font-weight: 500;line-height: 60px;padding-left:15px; float: left;color: #333;">LDS Study App</div>
+    <div style="font-size: 18px; font-weight: 500;line-height: 60px;padding-left:15px; float: left;color: #333;">LDS Scholar</div>
     <div style="display: inline;line-height: 64px;padding-left: 50px;"><a href="https://sites.google.com/view/lds-study-app-privacy-policy">Privacy Policy</a></div>
   </div>
-  <div class="content" style="width:900px;margin:0 auto;margin-top:50px;">
-    <img src="phone.png" style="width: 450px; float: right;">
-    <div class="content" style="width:450px;float:left;min-height:450px;margin-top:50px;">
-      <p style="font-size:38px;color:#555;font-weight:300;margin-bottom:30px;line-height: 38px;">Easily find references to your favorite scriptures.</p>
-      <p style="font-size:18px;color:#666;line-height:26px;">When reading scriptures. Have you ever wondered how many sources reference a particular scripture? Now you can find out! This handy app shows the references from all the institute manuals and from past general conferences.</p>
-      <p style="font-size:14px;color:#666">Available on the <a href="https://play.google.com/store/apps/details?id=com.dannyboyng.lds_study_app">Google Play Store</a> and <a href="https://apps.apple.com/nl/app/lds-study-app/id1561406755?l=en">Apple App Store</a></p>
-      <p>
-        <a href="https://play.google.com/store/apps/details?id=com.dannyboyng.lds_study_app"><img style="opacity: 0.7;" src="playstore2.png" height="59px"></a>&nbsp;&nbsp;
-        <a href="https://apps.apple.com/nl/app/lds-study-app/id1561406755?l=en"><img style="opacity: 0.7;" src="applestore.png" width="180px"></a>
-      </p>
-      <p style="font-size:32px;color:#555;font-weight:300;margin-bottom:20px;">Find scriptures with keywords blazingly fast.</p>
-      <p style="font-size:18px;color:#666;line-height:26px;">Do you need to search all the scriptures that contain the word charity? It's so easy with the "Scripture Finder".</p>
-      <p style="font-size:32px;color:#555;font-weight:300;margin-bottom:20px;">Reporting problems.</p>
-      <p style="font-size:16px;color:#666;line-height:16px;">Please report problems with the app to appmasterdanny@gmail.com</p>
-    </div>
+  <div class="content" style="min-width:400px;max-width:800px;margin-left: auto;margin-right: auto;">
+    <p style="font-size:38px;color:#555;font-weight:300;margin-bottom:15px;line-height: 38px;">Easily find references to your favorite scriptures.</p>
+    <p style="font-size:18px;color:#666;line-height:26px;">When reading scriptures. Have you ever wondered how many sources reference a particular scripture? Now you can find out! This handy app shows the references from all the institute manuals and from past general conferences.</p>
+    <p style="font-size:14px;color:#666">Available on the <a href="https://play.google.com/store/apps/details?id=com.dannyboyng.lds_study_app">Google Play Store</a> and <a href="https://apps.apple.com/nl/app/lds-study-app/id1561406755?l=en">Apple App Store</a></p>
+    <p style="min-width:400px;max-width:450px;float:left">
+      <a href="https://play.google.com/store/apps/details?id=com.dannyboyng.lds_study_app"><img style="opacity: 0.7;" src="playstore.png" height="59px"></a>&nbsp;&nbsp;
+      <a href="https://apps.apple.com/nl/app/lds-study-app/id1561406755?l=en"><img style="opacity: 0.7;" src="applestore.png" width="180px"></a>
+    </p>
+
     <div style="clear: both;"></div>
-    <p style="font-size:13px;color:#666;line-height:16px;">The LDS study app is not made by or endorsed by Intellectual Reserve, Inc. or The Church of Jesus Christ of Latter-day Saints. </p>
+
+    <p style="font-size:32px;color:#555;font-weight:300">Find scriptures with keywords blazingly fast.</p>
+    <p style="font-size:18px;color:#666;line-height:26px">Do you need to search all the scriptures that contain the word charity? It's so easy with the "Scripture Finder".</p>
+    
+    <p style="font-size:32px;color:#555;font-weight:300">Footnotes are available.</p>
+    <p style="font-size:18px;color:#666;line-height:26px">Footnotes provide great additional insight into the scriptures. All footnotes are now available inside LDS Scholar.</p>
+
+    <p style="font-size:32px;color:#555;font-weight:300">Would you like to support this effort.</p>
+    <p style="font-size:18px;color:#666;line-height:26px">Do you like this app and you would like to support LDS Scholar. We now accept donations in Algorand. Algorand is a cryptocurrency just like the more popular Bitcoin. At this time we only accept Algorand.</p>
+    <p style="font-size:18px;color:#666;line-height:26px; word-wrap: break-word;">Algo wallet address: <button onclick="CopyToClipboard('LYYB5YTPJGJHUCIG5AEDZWUCUFZFFZD4FWNQMCNLJ7T3FLQSSNNCUGTAVM')">Copy address</button> LYYB5YTPJGJHUCIG5AEDZWUCUFZFFZD4FWNQMCNLJ7T3FLQSSNNCUGTAVM</p>
+    <p style="text-align:center"><img src="AlgoQr.jpg" width="200px" /></p>
+    <p style="font-size:18px;color:#666;line-height:26px">Please do not send anything besides Algo to this address or your donation may be lost.</p>
+
+    <p style="font-size:32px;color:#555;font-weight:300">Reporting problems.</p>
+    <p style="font-size:16px;color:#666;line-height:16px">Please report problems with the app to appmasterdanny@gmail.com</p>
+
+    <p style="font-size:32px;color:#555;font-weight:300">Ideas.</p>
+    <p style="font-size:16px;color:#666;line-height:16px">Do you have ideas to make LDS Scholar even better, please send them to appmasterdanny@gmail.com</p>
+
+    <div style="clear: both;"></div>
+    <p style="font-size:13px;color:#666;line-height:16px;">LDS Scholar is not made by or endorsed by Intellectual Reserve, Inc. or The Church of Jesus Christ of Latter-day Saints. </p>
   </div>
 </body>
 </html>
